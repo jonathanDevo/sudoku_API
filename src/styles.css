@@ -1,0 +1,66 @@
+/* styles.css */
+
+.sudoku-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sudoku-grid {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #333;
+  }
+  
+  .sudoku-row {
+    display: flex;
+  }
+  
+  .input-jugador {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Líneas más gruesas para los bloques 3x3 */
+  .input-jugador:nth-child(3n) {
+    border-right: 2px solid #000;
+  }
+  .sudoku-row:nth-child(3n) .input-jugador {
+    border-bottom: 2px solid #000;
+  }
+  
+  /* Celdas que son fijas (predefinidas) */
+  .celda-fija {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Mensaje de victoria */
+  .mensaje-victoria {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .boton-reiniciar {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .boton-reiniciar:hover {
+    background-color: #0056b3;
+  }
+  
