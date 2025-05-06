@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { verificarVictoria, comparacionBloque, validarFilaColumna } from "../functions/funciones.js";
 import { useSudoku } from "../hooks/useSudoku.js";
 import "../styles/sudoku.css";
+import { appSettings } from "../config/appSettings";
 
 export function JuegoSudoku() {
-  const dificultad = import.meta.env.VITE_DEFAULT_DIFFICULTY;
-  const [nivel, setNivel] = useState(dificultad);
+  const [nivel, setNivel] = useState(appSettings.dificultad);
   const [recargar, setRecargar] = useState(false);
   const { solucion, isLoading } = useSudoku(nivel, recargar);
 

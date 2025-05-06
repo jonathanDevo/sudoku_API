@@ -55,11 +55,11 @@ export const verificarVictoria = (grid,solucionSudoku) => {
   alert("¡Has ganado, felidicades!");
 };
 
-const API_URL = import.meta.env.VITE_API_URL;
+import { appSettings } from "../config/appSettings";
 
 export const SudokuSolution = async (nivel) => {
 
-    const response = await fetch(`${API_URL}?difficulty=${nivel}`);
+    const response = await fetch(`${appSettings.apiUrl}?difficulty=${nivel}`);
     
     if (!response.ok) {
       throw new Error(`Error al obtener el sudoku: ${response.status}`);
