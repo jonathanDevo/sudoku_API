@@ -72,8 +72,8 @@ export const SudokuSolution = async (nivel) => {
 
       const solution = data.newboard.grids[0].solution;
       // const nivel = data.newboard.grids[0].difficulty;
-      console.log('Solución del Sudoku:', solution);
-      console.log('Nivel: ', nivel);
+      // console.log('Solución del Sudoku:', solution);
+      // console.log('Nivel: ', nivel);
       return solution;
 
 };

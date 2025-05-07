@@ -140,7 +140,10 @@ export function JuegoSudoku() {
         </p>
       )}
 
-      <button className="btn-ayuda" onClick={cambiarNivelActual}>Volver a jugar</button>      
+      <button className="btn-ayuda" onClick={cambiarNivelActual}>Volver a jugar</button> 
+      <div className="container-btn-salir">
+      <button className="btn-salir" onClick={() => window.location.href = "https://www.google.com"}>Salir</button>   
+      </div>  
     </div>
   );
 }
